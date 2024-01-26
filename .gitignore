@@ -1,3 +1,13 @@
+.vscode/
+Binaries/
+DerivedDataCache/
+Intermediate/
+Plugins/
+Saved/
+Draft_Project.code-workspace
+
+
+
 # Visual Studio 2015 user specific files
 .vs/
 
