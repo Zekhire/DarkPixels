@@ -1,8 +1,19 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{3FD61C4D-45CE-E9FC-3477-E195BB828383}",
+	"EngineAssociation": "5.2",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "DarkPixels",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine",
+				"SpiegelController"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
@@ -12,9 +23,18 @@
 			]
 		},
 		{
+			"Name": "GLTFImporter",
+			"Enabled": true
+		},
+		{
 			"Name": "VaRest",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/e47be161e7a24e928560290abd5dcc4f"
+		},
+		{
+			"Name": "glTFRuntime",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/d2ed3709933d4608a3a8dd746cbc045d"
 		},
 		{
 			"Name": "RuntimeAudioImporter",
@@ -25,6 +45,15 @@
 			"Name": "RuntimeArchiver",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/2f22e9adc1dc4254a277aabb2320f3f9"
+		},
+		{
+			"Name": "RuntimeFilesDownloader",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/e7e6df6d6e9c46f0ae35163eab67ff9a"
 		}
+	],
+	"TargetPlatforms": [
+		"Android",
+		"Windows"
 	]
 }
