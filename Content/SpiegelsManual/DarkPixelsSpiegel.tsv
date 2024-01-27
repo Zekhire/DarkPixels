@@ -1,0 +1,5 @@
+line_id	timestamp	action	param	command	description	beats
+1	0	PlaySound2D	RatuszIntro			
+2	5	PlaySound2D	DomAng			
+3	10	PlaySound2D	hzt_sound			
+		
