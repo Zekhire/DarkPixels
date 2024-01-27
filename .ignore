@@ -1,0 +1,11 @@
+/.git
+/.vscode
+/Content
+/Intermediate
+/Platforms
+/Saved
+/Plugins/glTFRuntime/.git
+/Plugins/glTFRuntime/Content
+/Plugins/glTFRuntime/Intermediate
+/Plugins/SpiegelMechanism/Content
+/Plugins/SpiegelMechanism/Intermediate
