@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{3FD61C4D-45CE-E9FC-3477-E195BB828383}",
+	"EngineAssociation": "5.2",
 	"Category": "",
 	"Description": "",
 	"Plugins": [
@@ -25,6 +25,11 @@
 			"Name": "RuntimeArchiver",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/2f22e9adc1dc4254a277aabb2320f3f9"
+		},
+		{
+			"Name": "glTFRuntime",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/d2ed3709933d4608a3a8dd746cbc045d"
 		}
 	]
 }
