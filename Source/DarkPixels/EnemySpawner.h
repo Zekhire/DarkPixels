@@ -16,5 +16,5 @@ class DARKPIXELS_API AEnemySpawner : public ASpiegelElement
 	public:
 
 	UFUNCTION(BlueprintNativeEvent,BlueprintCallable )
-	void SpawnEnemy(const FString &EnemyClass, int Number, float MinRadiusDistance, float MaxRadiusDistance);
+	void SpawnEnemy(const FString &EnemyClass, int Number, float MinRadiusDistance, float MaxRadiusDistance, float MinConeAngle, float MaxConeAngle);
 };

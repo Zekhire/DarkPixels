@@ -3,7 +3,7 @@
 
 #include "EnemySpawner.h"
 
-void AEnemySpawner::SpawnEnemy_Implementation(const FString &EnemyClass, int Number, float MinRadiusDistance, float MaxRadiusDistance)
+void AEnemySpawner::SpawnEnemy_Implementation(const FString &EnemyClass, int Number, float MinRadiusDistance, float MaxRadiusDistance, float MinConeAngle, float MaxConeAngle)
 {
 
 }
