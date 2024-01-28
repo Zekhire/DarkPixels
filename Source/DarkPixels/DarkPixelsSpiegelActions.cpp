@@ -4,27 +4,27 @@
 #include "DarkPixelsSpiegelActions.h"
 
 
-bool LoadAudioFileToArrayLocal(TArray64<uint8>& AudioData, const FString& FilePath)
-{
-#if UE_VERSION_OLDER_THAN(4, 26, 0)
-	TArray<uint8> AudioData32;
-	if (!FFileHelper::LoadFileToArray(AudioData32, *FilePath))
-	{
-		return false;
-	}
-	AudioData = AudioData32;
-#else
-	if (!FFileHelper::LoadFileToArray(AudioData, *FilePath))
-	{
-		return false;
-	}
-#endif
+// bool LoadAudioFileToArrayLocal(TArray64<uint8>& AudioData, const FString& FilePath)
+// {
+// #if UE_VERSION_OLDER_THAN(4, 26, 0)
+// 	TArray<uint8> AudioData32;
+// 	if (!FFileHelper::LoadFileToArray(AudioData32, *FilePath))
+// 	{
+// 		return false;
+// 	}
+// 	AudioData = AudioData32;
+// #else
+// 	if (!FFileHelper::LoadFileToArray(AudioData, *FilePath))
+// 	{
+// 		return false;
+// 	}
+// #endif
 
-	// Removing unused two uninitialized bytes
-	AudioData.RemoveAt(AudioData.Num() - 2, 2);
+// 	// Removing unused two uninitialized bytes
+// 	AudioData.RemoveAt(AudioData.Num() - 2, 2);
 
-	return true;
-}
+// 	return true;
+// }
 
 
 UDarkPixelsSpiegelActions::UDarkPixelsSpiegelActions()
@@ -93,7 +93,8 @@ bool UDarkPixelsSpiegelActions::AdditionalSpiegelFunctionsSet(FString SpiegelEve
 
         ERuntimeAudioFormat AudioFormat = RuntimeAudioImporterLibrary->GetAudioFormat(AudioAssetPath);
         TArray64<uint8> AudioData;
-        bool loaded = LoadAudioFileToArrayLocal(AudioData, *AudioAssetPath);
+        // bool loaded = LoadAudioFileToArrayLocal(AudioData, *AudioAssetPath);
+        bool loaded = true;
 
         FEncodedAudioStruct EncodedAudioInfo(AudioData, AudioFormat);
         FDecodedAudioStruct DecodedAudioInfo;
