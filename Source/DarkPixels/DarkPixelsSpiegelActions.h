@@ -2,6 +2,9 @@
 
 #pragma once
 
+#include "Sound/SoundWave.h"
+#include "Sound/SoundCue.h"
+#include "UObject/ConstructorHelpers.h"
 #include "CoreMinimal.h"
 #include "Kismet/GameplayStatics.h"
 #include "CMSFunctionsLibrary.h"
@@ -18,6 +21,23 @@ class DARKPIXELS_API UDarkPixelsSpiegelActions : public UExternalSpiegelFunction
 	GENERATED_BODY()
 
 public:
+	UDarkPixelsSpiegelActions();
+
+	int MaxAudioComponents = 1024;
+	int CurrentAudioComponent = 0;
+	TMap<FString, URuntimeAudioImporterLibrary*> RuntimeAudioImporterLibraryMap;
+	TArray<UAudioComponent*> AudioComponentArray;
+	TMap<FString, UAudioComponent*> AudioComponentMap;
+	TMap<FString, UImportedSoundWave*> ImportedSoundWaveMap;
+	TMap<FString, bool> loadedMap;
+
+	UAudioComponent* Audio;
+	// UAudioComponent* Audio;
+	// UImportedSoundWave* ImportedSoundWave;
+	// bool loaded;
+	// bool done;
+	virtual void Activate();
+
 
 	virtual bool AdditionalSpiegelFunctionsSet(FString SpiegelEvent, TArray<FString> SpiegelEventArguments) override;
 
