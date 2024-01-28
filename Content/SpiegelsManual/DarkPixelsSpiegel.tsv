@@ -1,4 +1,5 @@
 line_id	timestamp	action	param	command	description	beats
 1	0	PlaySound2D	zombie main music			
-2	0	SpawnEnemies	TestEnemy|20|500|700|0|90			
-2	0	SpawnEnemies	TestEnemy2|20|500|700|0|90			
+1	0	PlaySound2D	funniest-thing-001-85094			
+2	0	SpawnEnemies	EnemyRegular|20|500|700|0|90			
+2	0	SpawnEnemies	EnemyHeavy|20|500|700|0|90		
